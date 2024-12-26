@@ -1,0 +1,22 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Board</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+
+<form action="{% url 'index' %}" method="get">
+    <button type="submit" class="btn1"> Logout </button>
+</form>
+
+<body>
+
+    <p> This is shared white Board </p>
+
+    <a href="{% url 'home' %}"> Back to home page </a>
+
+</body>
+</html>

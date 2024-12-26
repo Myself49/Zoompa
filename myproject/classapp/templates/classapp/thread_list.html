@@ -1,0 +1,21 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+  {% for thread in object_list %}
+    <div class="thread">
+      <a href="{{ thread.get_absolute_url }}">{{ thread.title }}</a>
+      <p>{{ thread.created_at }}</p>
+    </div>
+  {% endfor %}
+
+
+  <form action="{% url 'create_thread' %}" method="get">
+    <button type="submit" class="btn"> Create Forums </button>
+  </form>
+
+  <form action="{% url 'home' %}" method="get">
+    <button type="submit" class="btn1"> Home </button>
+  </form>
+
+{% endblock %}

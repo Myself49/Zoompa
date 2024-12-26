@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+
+}
+
+img{
+    width: 200px;
+    border-radius: 25%;
+}
+
+button{
+    background-color: green;
+    color: black;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    border: none;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.btn1{
+    background-color: lightblue;
+    color: black;
+    position: fixed;
+    right: 2;
+    top: 2;
+    
+}
+
+.btn1:hover{
+    background-color: teal;
+}
+
+form{
+    max-width: 400px;
+    margin: auto;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 4p 8px rgba(0, 0, 0, 1);
+    padding: 20px;
+}
+
+label{
+    font-weight: bold;
+}

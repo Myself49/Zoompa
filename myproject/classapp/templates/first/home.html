@@ -1,0 +1,36 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'styles/styles.css' %}">
+</head>
+
+<form action="{% url 'index' %}" method="get">
+    <button type="submit" class="btn1"> Logout </button>
+</form>
+
+<body>
+
+    <p> Welcome to Open University of Sri Lanka online class room </p>
+
+    <form action="{% url 'white' %}" method="get">
+        <button type="submit" class="btn"> Click Here </button>
+    </form>
+
+    <form action="{% url 'thread_list' %}" method="get">
+        <button type="submit" class="btn"> Create forums </button>
+    </form>
+
+    <form action="{% url 'attend' %}" method="get">
+        <button type="submit" class="btn"> Create Meeting </button>
+    </form>
+
+    <img src="{% static 'images/logo.png' %}" alt="Open Logo">
+
+
+
+</body>
+</html>
